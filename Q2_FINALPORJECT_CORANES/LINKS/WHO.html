@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            background-image: url('background.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            color: white; 
+            height: 100vh; 
+            text-align: center; 
+        }
+
+        .header {
+            background-color: royalblue;
+            padding: 40px 0;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 20px;
+            text-align: right;
+            transition: background-color 0.5s ease;
+            position: relative;
+        }
+
+        .header:hover {
+            background-color: darkblue;
+            transform: scale(1.02);
+        }
+
+        .black-rectangle {
+            background-color: black;
+            width: auto;
+            height: 60px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.4s ease;
+        }
+
+        .black-rectangle:hover {
+            transform: rotate(5deg);
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .content {
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 2;
+            margin-top: 20px;
+            background-color: royalblue; 
+            width: 70%; 
+            margin-left: auto; 
+            margin-right: auto;  
+            text-align: left; 
+            position: relative;
+        }
+
+        .image-container {
+            margin-top: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .image-container img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: royalblue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: red;
+            background-color: white;
+            border-color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:focus {
+            outline: 2px solid yellow;
+            outline-offset: 4px;
+        }
+
+        a:active {
+            color: green;
+            background-color: white;
+            border-color: green;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        input:hover {
+            border-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="black-rectangle">
+            <h1>EXCELLING IN EDUCATING</h1>
+        </div>
+    </header>
+    
+    <section class="content"> 
+        <h2>Who is this website aimed to support?</h2>
+        <p>This website is dedicated to supporting children in gaining access to quality education, as we believe every child deserves this fundamental right.</p>
+        <p>Our mission focuses on creating a nurturing environment that provides age-appropriate activities designed to foster engagement and development.</p>
+        <p>We aim to offer interactive learning experiences that encourage curiosity and critical thinking while also addressing social and emotional growth.</p>
+        <p>By promoting collaboration and resilience, we equip children with essential life skills for their future.</p>
+        <p>Through partnerships with communities and organizations, we seek to raise awareness and advocate for educational equity.</p>
+        <p>Ultimately, we strive to empower children to reach their full potential, ensuring they have the opportunities needed to thrive and contribute positively to society.</p><div>
+        <a href="home.html" title="Go back to Home">HOME</a>
+    </section>
+    
+    <aside class="image-container">
+        <img src="Images/happykids.jpg" alt="Happy Kids">
+    </aside>
+    
+    <footer>
+        <p>MARLOWE CORANES EXCELLING IN EDUCATING | Contact: <a href="mailto:marlowergeald.coranes@smc.pshs.edu.ph">marlowergeald.coranes@smc.pshs.edu.ph</a></p>
+    </footer>

@@ -1,0 +1,199 @@
+body {
+    background-image: url('Images/knowldee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.header {
+    background-color: royalblue;
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    text-align: right;
+    transition: background-color 0.5s ease;
+}
+
+.header:hover {
+    background-color: darkblue;
+    transform: scale(1.02);
+}
+
+.black-rectangle {
+    background-color: black;
+    width: auto;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.black-rectangle:hover {
+    transform: rotate(5deg);
+}
+
+h1 {
+    margin: 0;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+    white-space: nowrap;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: lightblue;
+    transform: skewX(10deg);
+}
+
+h2, p, a {
+    border-radius: 15px;
+    background-color: navy;
+    width: 600px;
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+
+a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+a:active {
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+}
+
+a:focus {
+    outline: 2px solid cyan;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a[href] {
+    border: 2px solid transparent;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border 0.3s;
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    border: 2px solid transparent; 
+}
+
+a:hover {
+    color: red;
+    border: 2px solid red; 
+}
+
+a[title]::after {
+    content: " (Click to Learn More)";
+    font-size: 12px;
+    color: lightgray;
+}
+
+img[src] {
+    border: 5px solid navy;
+    transition: border 0.3s ease, transform 0.3s ease;
+}
+
+img[src]:hover {
+    border: 5px solid lightblue;
+    transform: scale(1.05);
+}
+
+video {
+    border: 20px solid white;
+    margin-left: 20px;
+    transition: border-color 0.5s ease, transform 0.5s ease;
+}
+
+video:hover {
+    border-color: lightblue;
+    transform: scale(1.05);
+}
+
+video[controls] {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+video[controls]:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.content {
+    padding: 100px;
+    border-radius: 10px;
+    display: inline-block;
+    z-index: 2;
+    margin-left: 20px;
+    text-align: left;
+    transition: transform 0.5s ease;
+}
+
+.content:hover {
+    transform: rotateY(10deg);
+}
+
+.image-container {
+    position: absolute;
+    top: 48%;
+    right: 10%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: auto;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.happykids-container {
+    position: absolute;
+    top: 98%;
+    right: 10%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.happykids-container img {
+    width: auto;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.happykids-container img:hover {
+    transform: scale(1.1);
+}
